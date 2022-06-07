@@ -15,8 +15,8 @@ class Test_contador(unittest.TestCase):
         #Segundo test
         variable = 3
         contador2 = Contador()
-        self.assertEqual(contador2.inicio, )
-        self.assertEqual(contador2.incremento, )
+        self.assertEqual(contador2.inicio, 0)
+        self.assertEqual(contador2.incremento, 1)
         self.assertEqual(contador2.limite, variable)
 
 
