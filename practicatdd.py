@@ -1,8 +1,8 @@
 class Contador():
     def __init__(self, inicial, incremento, limite):
-        self.__inicio = inicial
-        self.__incremento = incremento
-        self.__limite = limite
+        self.inicio = inicial
+        self.incremento = incremento
+        self.limite = limite
 
 
 
