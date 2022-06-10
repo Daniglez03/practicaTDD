@@ -22,3 +22,5 @@ class Contador():
             
     def __valorActual__(self):
         return self.valorAct
+    def __reiniciar__(self):
+        self.valorAct = self.inicio

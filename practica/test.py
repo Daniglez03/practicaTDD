@@ -32,7 +32,7 @@ class Test_contador(unittest.TestCase):
         contador4.__incrementar__()
         contador4.__incrementar__()
     def test5(self):
-        #Cuarto test
+        #Quinto test
         contador5 = Contador(inicial=0, incremento=1, limite=4)
         
         contador5.__incrementar__()
@@ -40,6 +40,13 @@ class Test_contador(unittest.TestCase):
         contador5.__incrementar__()
         contador5.__incrementar__()
         contador5.__incrementar__()
+
+    def test6(self):
+        #Sexto test
+        contador6 = Contador(inicia=0, incremento=1, limite=4)
+        
+        print(contador6.valorAct)
+        contador6.__reiniciar__
 
 if __name__=="__main__":
     unittest.main()
