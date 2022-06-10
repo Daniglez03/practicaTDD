@@ -18,6 +18,7 @@ class Contador():
         self.inicio = self.inicio + self.incremento
         if self.valorAct > self.limite:
             print("Se ha superado el límite")
+            self.valorAct = self.inicio
             
     def __valorActual__(self):
         return self.valorAct
