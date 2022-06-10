@@ -33,7 +33,7 @@ class Test_contador(unittest.TestCase):
         contador4.__incrementar__()
     def test5(self):
         #Cuarto test
-        contador5 = Contador()
+        contador5 = Contador(inicial=0, incremento=1, limite=4)
         
         contador5.__incrementar__()
         contador5.__incrementar__()
