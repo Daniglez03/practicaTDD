@@ -7,16 +7,16 @@ class Test_contador(unittest.TestCase):
         # condicion inicial
         contador1 = Contador(0, 2, 5)
         # verificar
-        self.assertEqual(contador1.inicio, 0)
-        self.assertEqual(contador1.incremento, 2)
-        self.assertEqual(contador1.limite, 5)
+        self.assertEqual(contador1.__inicio__(), 0)
+        self.assertEqual(contador1.__incremento__(), 2)
+        self.assertEqual(contador1.__limite__(), 5)
     def test2(self):
         #Segundo test
         variable = 3
-        contador2 = Contador()
-        self.assertEqual(contador2.inicio, 0)
-        self.assertEqual(contador2.incremento, 1)
-        self.assertEqual(contador2.limite, variable)
+        contador2 = Contador(0, 1, variable)
+        self.assertEqual(contador2.__inicio__(), 0)
+        self.assertEqual(contador2.__incremento__(), 1)
+        self.assertEqual(contador2.__limite__(), variable)
     def test3(self):
         #Tercer test
         contador3 = Contador(inicial=0, incremento=2, limite=4)
