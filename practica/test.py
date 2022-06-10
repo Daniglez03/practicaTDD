@@ -23,6 +23,16 @@ class Test_contador(unittest.TestCase):
         self.assertEqual(contador3.__inicio__(), 0)
         self.assertEqual(contador3.__incremento__(), 2)
         self.assertEqual(contador3.__limite__(), 4)
+    def test4(self):
+        #Cuarto test
+        contador4 = Contador(inicial=0, incremento=3, limite=6)
+
+        contador4.__incrementar__()
+        self.assertEqual(contador4.__init__(), 0)
+        contador4.__incrementar__()
+        self.assertEqual(contador4.__init__(), 3)
+        contador4.__incrementar__()
+        self.assertEqual(contador4.__init__(), 6)
 
 if __name__=="__main__":
     unittest.main()
