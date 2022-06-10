@@ -20,10 +20,9 @@ class Test_contador(unittest.TestCase):
     def test3(self):
         #Tercer test
         contador3 = Contador(inicial=0, incremento=2, limite=4)
-
-        self.assertEqual(contador3.inicio)
-        self.assertEqual(contador3.incremento)
-        self.assertEqual(contador3.limite)
+        self.assertEqual(contador3.__inicio__(), 0)
+        self.assertEqual(contador3.__incremento__(), 2)
+        self.assertEqual(contador3.__limite__(), 4)
 
 if __name__=="__main__":
     unittest.main()
