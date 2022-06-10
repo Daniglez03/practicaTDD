@@ -43,7 +43,7 @@ class Test_contador(unittest.TestCase):
 
     def test6(self):
         #Sexto test
-        contador6 = Contador(inicia=0, incremento=1, limite=4)
+        contador6 = Contador(inicial=0, incremento=1, limite=4)
         
         print(contador6.valorAct)
         contador6.__reiniciar__
